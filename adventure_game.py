@@ -125,7 +125,9 @@ def combat(state):
                     print_pause("You have been defeated!\n", 3)
                     game_over('lost')
                 else:
-                    print("You got lucky and defeated the enemy!!\n", 3)
+                    print_pause("You are victorious!")
+                    print_pause("You have rid the town "
+                                f"of the {state['enemy']}.\n", 3)
                     game_over('won')
         elif choice == '2':
             print_pause("", 0)
